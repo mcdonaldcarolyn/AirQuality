@@ -13,10 +13,13 @@ print(response.json())
 
 def getdata(url):
   r= requests.get(url)
+  r.json()
   return r.text
 
-htmldata = getdata(url)
-soup = BeautifulSoup(htmldata, 'html.parser')
+print (getdata(url))
+
+#htmldata = getdata(url)
+#soup = BeautifulSoup(htmldata, 'html.parser')
 #result = soup.find_all(class = )
                    
   
